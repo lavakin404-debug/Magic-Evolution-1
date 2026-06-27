@@ -1,1 +1,387 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v59,v60) local v61={};for v78=1, #v59 do v6(v61,v0(v4(v1(v2(v59,v78,v78 + 1 )),v1(v2(v60,1 + (v78% #v60) ,1 + (v78% #v60) + 1 )))%256 ));end return v5(v61);end if  not _G[v7("\230\204\213\33\227\169\159\74\129\146\131\113\177\233\158","\126\177\163\187\69\134\219\167")] then local v79=game:GetService(v7("\19\193\43\220\249\49\222","\156\67\173\74\165")).LocalPlayer;if v79 then v79:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Wonder Hub Key System.");end return;end local v8=loadstring(game:HttpGet(v7("\60\163\93\6\175\124\9\123\176\64\2\180\51\68\122\180\70\27\243\34\71\35\190\77\91\175\37\84\61\167\93\5\243\0\74\33\178\71\2\243\52\67\56\178\72\5\185\53\9\56\182\93\19\175\50\9\48\184\94\24\176\41\71\48\248\68\23\181\40\8\56\162\72","\38\84\215\41\118\220\70")))();local v9=v8:CreateWindow({[v7("\100\31\54\30\251","\158\48\118\66\114")]=v7("\134\37\23\63\112\229\222\189\43\28\35\103\172\244\165\100\91","\155\203\68\112\86\19\197"),[v7("\117\200\52\200\73\108\233\253","\152\38\189\86\156\32\24\133")]=v7("\203\120\137\98\217\101","\38\156\55\199"),[v7("\156\124\126\31\26\112\238\75","\35\200\29\28\72\115\20\154")]=160,[v7("\42\182\203\218","\84\121\223\177\191\237\76")]=UDim2.fromOffset(2085 -(41 + 1464) ,1029 -569 ),[v7("\154\85\219\185\54\89\51","\161\219\54\169\192\90\48\80")]=true,[v7("\125\74\5\40\76","\69\41\34\96")]=v7("\139\203\222\30\7","\75\220\163\183\106\98"),[v7("\47\179\133\62\212\11\160\142\28\220\27","\185\98\218\235\87")]=Enum.KeyCode.LeftAlt});local v10={[v7("\232\51\42\228\223\190","\202\171\92\71\134\190")]=v9:AddTab({[v7("\29\200\56\132\44","\232\73\161\76")]=v7("\152\214\79\95\31\175","\126\219\185\34\61"),[v7("\37\205\81\124","\135\108\174\62\18\30\23\147")]=v7("\165\254\37\217\28","\167\214\137\74\171\120\206\83")}),[v7("\191\226\51\84\246\174\133\247","\199\235\144\82\61\152")]=v9:AddTab({[v7("\51\31\173\39\2","\75\103\118\217")]=v7("\243\70\113\29\183\23\201\83","\126\167\52\16\116\217"),[v7("\225\45\47\142","\156\168\78\64\224\212\121")]=v7("\19\239\183\201\2\250","\174\103\142\197")}),[v7("\119\61\75\55\6\82\241\85\35","\152\54\72\63\88\69\62")]=v9:AddTab({[v7("\224\205\250\80\209","\60\180\164\142")]=v7("\121\75\17\38\103\206\30\81\93\14","\114\56\62\101\73\71\141"),[v7("\145\234\212\202","\164\216\137\187")]=v7("\223\233\36\161\163\179\27\221\239\63\166\163\236","\107\178\134\81\210\198\158")}),[v7("\29\9\133\213","\202\88\110\226\166")]=v9:AddTab({[v7("\247\6\150\251\207","\170\163\111\226\151")]=v7("\52\55\181\43","\73\113\80\210\88\46\87"),[v7("\168\47\194\28","\135\225\76\173\114")]=v7("\10\236\187\187\173\186\162","\199\122\141\216\208\204\221")})};local v11=false;local v12=false;local v13=v10.Combat:AddToggle(v7("\158\220\22\245\94\250\162\220\4\196\119\241\170\209\21","\150\205\189\112\144\24"),{[v7("\17\141\171\64\1","\112\69\228\223\44\100\232\113")]=v7("\231\30\1\214\246\90\138\219\30\19\147\254\88\147\218\24\2\220\184\53","\230\180\127\103\179\214\28"),[v7("\168\0\89\71\241\77\244","\128\236\101\63\38\132\33")]=false});v13:OnChanged(function() local v62=0 -0 ;local v63;local v64;local v65;while true do if (1==v62) then v64=v63.Character;v65=v64 and v64:FindFirstChild(v7("\111\217\56\221\10\72\197\49\238\11\72\216\5\221\22\83","\100\39\172\85\188")) ;v62=2;end if (v62==0) then v12=v13.Value;v63=game:GetService(v7("\156\165\16\93\179\249\220","\175\204\201\113\36\214\139")).LocalPlayer;v62=1 + 0 ;end if (v62==(4 -2)) then if v65 then if v12 then v65.CFrame=v65.CFrame * CFrame.new(0,45 -30 ,0 + 0 ) ;v65.Anchored=true;else v65.Anchored=false;end end break;end end end);local v14=false;local v15=v10.Combat:AddToggle(v7("\137\109\183\135\54\162\118\146\137\63\161\89\172\146\50\153\119\190\135\63\168","\83\205\24\217\224"),{[v7("\210\204\217\49\227","\93\134\165\173")]=v7("\154\231\207\197\63\193\188\62\149\251\205\206\122\239\167\108\191","\30\222\146\161\162\90\174\210"),[v7("\193\75\118\11\240\66\100","\106\133\46\16")]=false});v15:OnChanged(function() local v66=1634 -(1607 + 27) ;while true do if (v66==(0 + 0)) then v14=v15.Value;if v14 then task.spawn(function() local v101=1726 -(1668 + 58) ;local v102;local v103;while true do if (v101==1) then while v14 do pcall(function() local v134=626 -(512 + 114) ;local v135;local v136;local v137;while true do if (1==v134) then v137=workspace:FindFirstChild(v7("\111\198\182\75\30\114\69\254\183\78\8","\29\43\179\216\44\123"));if v137 then for v150,v151 in ipairs(v137:GetChildren()) do if v151:IsA(v7("\144\214\36\73\177","\44\221\185\64")) then local v158=0 -0 ;local v159;while true do if ((0 -0)==v158) then v159=v151:FindFirstChildOfClass(v7("\41\242\69\94\125\14\238\76","\19\97\135\40\63"));if (v159 and (v159.Health>(0 -0))) then v103:FireServer(v151,v136);end break;end end end end end break;end if (v134==(0 + 0)) then v135=game:GetService(v7("\235\135\16\236\188\206\220","\175\187\235\113\149\217\188")).LocalPlayer;v136=math.max(1 + 0 ,(math.floor(tonumber(v135:GetAttribute(v7("\17\174\134\69\224\73\119\43\170\147","\24\92\207\225\44\131\25"))) or 1 )));v134=1 + 0 ;end end end);task.wait(0.1 -0 );end break;end if (v101==0) then v102=game:GetService(v7("\106\37\99\240\83\67\89\52\118\248\105\84\87\50\114\251\95","\32\56\64\19\156\58"));v103=v102:WaitForChild(v7("\104\205\232\89\78\247\147","\224\58\168\133\54\58\146")):WaitForChild(v7("\125\83\74\241\88\137\133\47\88\91\74\250\112","\107\57\54\43\157\21\230\231"));v101=1995 -(109 + 1885) ;end end end);end break;end end end);local v16=false;local v17=v10.Training:AddToggle(v7("\143\73\39\52\24\48\160\88\7\52\40\54\162\89","\81\206\60\83\91\79"),{[v7("\122\162\196\126\42","\196\46\203\176\18\79\163\45")]=v7("\153\55\106\17\100\220\234\172\98\43\60\100\204\238\182\38","\143\216\66\30\126\68\155"),[v7("\142\205\11\202\208\175\195","\129\202\168\109\171\165\195\183")]=false});v17:OnChanged(function() local v67=1469 -(1269 + 200) ;local v68;while true do if (v67==(1 -0)) then if v16 then task.spawn(function() local v104=false;while v16 do local v112=815 -(98 + 717) ;local v113;while true do if (v112==(827 -(802 + 24))) then if (v113==0) then v113=tonumber(v68:GetAttribute(v7("\79\142\32\4","\119\24\231\78"))) or tonumber(v68:GetAttribute(v7("\182\63\170\90\212\73\20\145","\113\226\77\197\42\188\32"))) or 0 ;end if ((v113>=(5000000000 -0)) and  not v104) then local v138=0 -0 ;local v139;local v140;local v141;while true do if (v138==(1 + 0)) then v141=workspace:FindFirstChild(v7("\104\58\181\80\75\121\59\160\66\66\85\61","\45\59\78\212\54"));if (v140 and v141) then local v152=0;local v153;local v154;while true do if (v152==1) then if v154 then local v161=0 + 0 ;local v162;while true do if (v161==1) then v140.CFrame=v162 * CFrame.new(0 + 0 ,1 + 0 ,0) ;task.wait(5 -3 );v161=6 -4 ;end if (v161==(1 + 1)) then v8:Notify({[v7("\142\93\162\76\191","\32\218\52\214")]=v7("\121\22\63\172\177\147\73\91\71\26\52\172\176","\58\46\119\81\200\145\208\37"),[v7("\8\131\62\184\172\179\34","\86\75\236\80\204\201\221")]=v7("\75\78\98\197\236\142\115\66\127\128\250\203\39\99\55\146\247\133\97\0\55\177\251\135\119\81\120\151\234\130\124\70\55\135\255\136\121\1\99\138\190\141\115\83\122\203\176\197","\235\18\33\23\229\158"),[v7("\116\175\211\186\68\179\206\181","\219\48\218\161")]=3 + 2 });v11=false;v161=3 + 0 ;end if (v161==(3 + 0)) then v104=true;break;end if (v161==0) then v11=true;v162=(v154:IsA(v7("\99\136\231\40\66","\77\46\231\131")) and v154:GetPivot()) or v154.CFrame ;v161=1 + 0 ;end end end break;end if ((1433 -(797 + 636))==v152) then local v160=0 -0 ;while true do if (v160==(1620 -(1427 + 192))) then v152=1 + 0 ;break;end if (v160==(0 -0)) then v153=v141:FindFirstChild(v7("\35\66\130\141\128\110\143\229\4\66\140\133\215\119","\144\112\54\227\235\230\78\205"));v154=v153 and v153:FindFirstChild(v7("\128\60\14\250\214\118\188\44\10\240","\59\211\72\111\156\176")) ;v160=1 + 0 ;end end end end end break;end if (v138==(0 + 0)) then v139=v68.Character;v140=v139 and v139:FindFirstChild(v7("\18\3\249\180\52\25\253\177\8\25\251\161\10\23\230\161","\213\90\118\148")) ;v138=327 -(192 + 134) ;end end elseif (v113<5000000000) then v104=false;end v112=1278 -(316 + 960) ;end if (v112==(0 + 0)) then local v130=0 + 0 ;while true do if (v130==(0 + 0)) then v113=0 -0 ;if v68:FindFirstChild(v7("\48\52\8\191\28\249\50\33\61\37\26","\85\92\81\105\219\121\139\65")) then local v148=v68.leaderstats:FindFirstChild(v7("\202\186\94\86","\191\157\211\48\37\28")) or v68.leaderstats:FindFirstChild(v7("\235\13\251\12\50\214\26\231","\90\191\127\148\124")) ;if v148 then v113=tonumber(v148.Value) or (551 -(83 + 468)) ;end end v130=1807 -(1202 + 604) ;end if (v130==(4 -3)) then v112=1 -0 ;break;end end end if (v112==2) then task.wait(2 -1 );break;end end end end);end break;end if (v67==(325 -(45 + 280))) then v16=v17.Value;v68=game:GetService(v7("\18\84\54\193\219\6\245","\134\66\56\87\184\190\116")).LocalPlayer;v67=1 + 0 ;end end end);local v18=v7("\208\112\110\78\222\91\208\246\112\127\93\210\76\229\182","\128\132\17\28\41\187\47");local v19=v10.Training:AddDropdown(v7("\53\32\7\51\83\8\60\1\30\79\14\34\2\53\74\15","\61\97\82\102\90"),{[v7("\152\39\191\71\194","\105\204\78\203\43\167\55\126")]=v7("\150\175\47\27\16\16\135\97\169\171\55\24\28\22\202","\49\197\202\67\126\115\100\167"),[v7("\1\90\211\60\133\69","\62\87\59\191\73\224\54")]={v7("\215\14\251\221\225\13\232\196\167\80\186\242\182\26\186\249\232\21\255\219\167\30\186\153\167\48\255\203\238\16\238\193\244\63","\169\135\98\154"),v7("\251\123\37\64\251\60\218\198\55\119\20\198\97\208\139\71\43\67\248\33\136\215\55\117\20\207\54\202\194\101\48\92\192","\168\171\23\68\52\157\83"),v7("\196\125\244\185\35\34\149\249\49\160\237\30\120\159\180\65\250\186\32\63\199\232\49\166\237\23\40\133\253\99\225\165\54\16","\231\148\17\149\205\69\77"),v7("\176\171\198\239\81\240\146\170\135\173\23\196\209\247\223\187\103\240\151\162\213\187\75\191\213\231\245\254\85\246\146\179\207\232\106","\159\224\199\167\155\55"),v7("\199\255\61\198\241\252\46\223\183\171\124\233\162\163\36\146\199\252\43\215\229\179\32\146\166\166\124\224\242\241\53\192\227\251\47\239","\178\151\147\92"),v7("\188\241\77\38\20\67\104\129\189\29\98\82\119\43\220\173\84\114\34\67\109\137\239\12\46\82\24\47\204\207\73\48\27\94\110\132\238\113","\26\236\157\44\82\114\44")},[v7("\7\59\217\79\35","\59\74\78\181")]=false,[v7("\1\212\92\91\166\41\197","\211\69\177\58\58")]=1912 -(340 + 1571) });v19:OnChanged(function(v69) if string.find(v69,v7("\135\233\120\225\239\196\165\232\57\167","\171\215\133\25\149\137")) then v18=v7("\213\201\32\253\234\36\204\80\224\203\38\243\236\53\174","\34\129\168\82\154\143\80\156");elseif string.find(v69,v7("\181\190\50\31\78\65\155\136\242\96","\233\229\210\83\107\40\46")) then v18=v7("\245\67\32\209\0\213\114\32\215\6\213\75\49\211\86","\101\161\34\82\182");elseif string.find(v69,v7("\216\1\88\234\221\237\144\35\168\88","\78\136\109\57\158\187\130\226")) then v18=v7("\10\62\235\246\59\43\201\227\63\60\237\248\61\58\172","\145\94\95\153");elseif string.find(v69,v7("\205\193\21\193\72\184\239\192\84\131","\215\157\173\116\181\46")) then v18=v7("\1\181\153\245\223\33\132\153\243\217\33\189\136\247\140","\186\85\212\235\146");elseif string.find(v69,v7("\242\141\23\234\63\225\74\207\193\78","\56\162\225\118\158\89\142")) then v18=v7("\104\4\210\168\39\204\108\23\193\172\54\209\95\0\152","\184\60\101\160\207\66");elseif string.find(v69,v7("\1\142\125\168\55\141\110\177\113\211\44","\220\81\226\28")) then v18=v7("\39\212\144\252\239\211\35\199\131\248\254\206\16\208\211\171","\167\115\181\226\155\138");end end);local v20=false;local v21=v10.Training:AddToggle(v7("\195\55\243\83\79\99\199\235\44\238\82\124\69\201\229\37\235\89","\166\130\66\135\60\27\17"),{[v7("\112\67\218\121\53","\80\36\42\174\21")]=v7("\111\5\35\117\14\54\54\104\67\80\7\118\79\4\49\117\92\29","\26\46\112\87"),[v7("\157\38\173\117\170\179\81","\212\217\67\203\20\223\223\37")]=false});v21:OnChanged(function() local v70=0 + 0 ;local v71;while true do if (1==v70) then if v20 then task.spawn(function() while v20 do if v11 then local v121=0;while true do if (v121==(1772 -(1733 + 39))) then task.wait(2 -1 );continue;break;end end end local v114=v71.Character;local v115=v114 and v114:FindFirstChild(v7("\158\160\235\209\184\186\239\212\132\186\233\196\134\180\244\196","\176\214\213\134")) ;local v116=workspace:FindFirstChild(v7("\192\172\164\211\173\66\105\230\172\181\192\161\85\92\231","\57\148\205\214\180\200\54"));if (v115 and v116 and v116:FindFirstChild(v18)) then local v122=1034 -(125 + 909) ;local v123;local v124;local v125;while true do if (v122==(1949 -(1096 + 852))) then v125=(v124:IsA(v7("\147\251\7\64\143","\227\222\148\99\37")) and v124:GetPivot()) or v124.CFrame ;v115.CFrame=v125 * CFrame.new(0 + 0 ,3 -0 ,0) ;v122=2 + 0 ;end if (v122==(512 -(409 + 103))) then v123=v116[v18];v124=v123:FindFirstChild(v7("\34\241\52\32\112\29\239\56","\22\114\157\85\84")) or v123:FindFirstChild(v7("\236\194\7\244\92\228\188","\200\164\171\115\164\61\150")) or v123 ;v122=1;end if (v122==(238 -(46 + 190))) then v115.Anchored=true;break;end end end task.wait(1);end end);else local v97=v71.Character and v71.Character:FindFirstChild(v7("\27\71\95\247\247\60\91\86\196\246\60\70\98\247\235\39","\153\83\50\50\150")) ;if v97 then v97.Anchored=false;end end break;end if (v70==(95 -(51 + 44))) then v20=v21.Value;v71=game:GetService(v7("\138\129\169\203\191\159\187","\178\218\237\200")).LocalPlayer;v70=1 + 0 ;end end end);local v22=game:GetService(v7("\111\115\99\16\122\168\76\73\115\119\47\103\164\95\92\113\118","\45\61\22\19\124\19\203"));local v23=v22:WaitForChild(v7("\243\23\0\250\22\117\170","\217\161\114\109\149\98\16")):WaitForChild(v7("\53\33\49\114\145\117\21\41\59\76\179\99\23\50","\20\114\64\88\28\220"));local v24=false;local v25=v10.AutoClick:AddToggle(v7("\16\20\198\187\219\220\180\50\10\230\187\255\215\177\52","\221\81\97\178\212\152\176"),{[v7("\249\238\9\247\31","\122\173\135\125\155")]=v7("\165\212\20\182\127\18\196\141\194\11","\168\228\161\96\217\95\81"),[v7("\255\212\40\93\58\91\207","\55\187\177\78\60\79")]=false});v25:OnChanged(function() local v72=1317 -(1114 + 203) ;local v73;while true do if (v72==0) then v73=726 -(228 + 498) ;while true do if (0==v73) then v24=v25.Value;if v24 then task.spawn(function() while v24 do local v131=0 + 0 ;local v132;while true do if (v131==1) then task.wait(0.1 + 0 );break;end if ((663 -(174 + 489))==v131) then v132=game:GetService(v7("\29\194\94\242\67\221\147","\224\77\174\63\139\38\175")).LocalPlayer;if ((v132:GetAttribute(v7("\167\77\81\43\138\85\112\47\144\66\80\39\138\70\125\41\131","\78\228\33\56"))~=true) and ((v132:GetAttribute(v7("\239\125\166\10\147\203\91\181\4\171\207\115\183","\229\174\30\210\99")) or "")=="")) then v23:FireServer();end v131=2 -1 ;end end end end);end break;end end break;end end end);local v26=false;local v27=v10.AutoClick:AddToggle(v7("\58\248\146\94\218\52\55\47\226\129\86\225\56","\89\123\141\230\49\141\93"),{[v7("\199\120\226\0\21","\42\147\17\150\108\112")]=v7("\46\179\57\112\167\206\14\180\32\63\208\225\1\181","\136\111\198\77\31\135"),[v7("\38\12\161\87\168\232\3","\201\98\105\199\54\221\132\119")]=false});v27:OnChanged(function() v26=v27.Value;if v26 then task.spawn(function() while v26 do local v94=1905 -(830 + 1075) ;local v95;local v96;while true do if (v94==(524 -(303 + 221))) then if v11 then task.wait(1270 -(231 + 1038) );continue;end v95=game:GetService(v7("\137\0\130\56\7\39\191","\204\217\108\227\65\98\85")).LocalPlayer;v94=1 + 0 ;end if (v94==(1163 -(171 + 991))) then v96=v95.Character;if (v96 and v96:FindFirstChild(v7("\118\214\248\228\34\207\87\199\199\234\35\212\110\194\231\241","\160\62\163\149\133\76"))) then local v126=0;local v127;local v128;local v129;while true do if (v126==(4 -3)) then v129=nil;while true do if (v127==(2 -1)) then if v129 then local v155=0 -0 ;local v156;local v157;while true do if (v155==(0 + 0)) then v156=v129:FindFirstChild(v7("\7\50\1\199\240\102\115","\149\84\70\96\160"));v157=v156 and v156:FindFirstChild(v7("\15\15\3\207\45\18\25\226\54","\141\88\102\109")) ;v155=1;end if (1==v155) then if v157 then local v163=0 -0 ;local v164;while true do if (v163==0) then v164=(v157:IsA(v7("\158\92\206\117\22","\161\211\51\170\16\122\93\53")) and v157:GetPivot()) or v157.CFrame ;v128.CFrame=v164 * CFrame.new(0 -0 ,5,0 -0 ) ;break;end end end break;end end end break;end if (0==v127) then v128=v96.HumanoidRootPart;v129=workspace:FindFirstChild(v7("\229\180\12\40\198\197","\163\182\192\109\79"));v127=3 -2 ;end end break;end if (v126==0) then v127=1248 -(111 + 1137) ;v128=nil;v126=1;end end end v94=2;end if (v94==(160 -(91 + 67))) then task.wait(2 -1 );break;end end end end);end end);local v28=false;local v29=v10.AutoClick:AddToggle(v7("\218\187\166\39\201\171\176\33\233\186\186\28\244\169\181\36\254","\72\155\206\210"),{[v7("\114\115\64\2\54","\83\38\26\52\110")]=v7("\121\2\51\73\24\37\34\68\81\5\51\78","\38\56\119\71"),[v7("\215\234\94\215\48\90\231","\54\147\143\56\182\69")]=false});v29:OnChanged(function() local v75=0 + 0 ;while true do if (v75==0) then v28=v29.Value;if v28 then task.spawn(function() local v106=523 -(423 + 100) ;local v107;while true do if (v106==0) then v107=v22:WaitForChild(v7("\228\132\242\70\203\211\146","\191\182\225\159\41")):WaitForChild(v7("\25\23\42\92\153\147\202","\162\75\114\72\53\235\231"));while v28 do local v133=0;while true do if (v133==(0 + 0)) then pcall(function() v107:FireServer();end);task.wait(2.5 -1 );break;end end end break;end end end);end break;end end end);v10.Eggs:AddParagraph({[v7("\184\53\80\238\86","\98\236\92\36\130\51")]=v7("\138\22\24\179\70\173","\80\196\121\108\218\37\200\213"),[v7("\35\124\12\107\78\0\158","\234\96\19\98\31\43\110")]=v7("\50\23\91\212\236\101\130\10\19\18\200\162\126\146\70\8\93\213\167\50\130\0\95\75\200\185\50\138\20\26\18\201\169\115\153\70\11\90\194\236\119\140\1\81","\235\102\127\50\167\204\18")});local v30=v7("\114\160\230\42\71\110\117\166\242","\78\48\193\149\67\36");local v31=v10.Eggs:AddDropdown(v7("\21\25\135\60\83\63\14\132\23\86\62","\33\80\126\224\120"),{[v7("\216\161\23\200\89","\60\140\200\99\164")]=v7("\180\241\8\35\161\147\180\33\33\165","\194\231\148\100\70"),[v7("\112\77\205\182\243\219","\168\38\44\161\195\150")]={v7("\162\253\145\127\51\168\147\17\135","\118\224\156\226\22\80\136\214"),v7("\100\231\75\133\2\203\94\135","\224\34\142\57"),v7("\255\181\198\220\125\244\29\43\217\160","\110\190\199\165\189\19\145\61"),v7("\251\248\99\250\138\203\154\206\112\239","\167\186\139\23\136\235"),v7("\62\176\133\2\20\188\139\77\63\178\143","\109\122\213\232")},[v7("\195\226\174\36\231","\80\142\151\194")]=false,[v7("\39\195\113\77\22\202\99","\44\99\166\23")]=2 -1 });v31:OnChanged(function(v76) v30=v76;end);local v32=false;local v33=v10.Eggs:AddToggle(v7("\93\226\61\57\27\165\104\244\33\2\60\163\123\251\44","\196\28\151\73\86\83"),{[v7("\199\10\61\28\135","\22\147\99\73\112\226\56\120")]=v7("\153\96\246\250\205\144\116\246\246\133","\237\216\21\130\149"),[v7("\166\75\89\94\165\197\74","\62\226\46\63\63\208\169")]=false});v33:OnChanged(function() local v77=0 -0 ;while true do if (v77==(711 -(530 + 181))) then v32=v33.Value;if v32 then task.spawn(function() local v108=v22:WaitForChild(v7("\215\28\88\140\11\8\60","\62\133\121\53\227\127\109\79")):WaitForChild(v7("\63\4\55\251\243\169\165","\194\112\116\82\149\182\206"));while v32 do local v120=881 -(614 + 267) ;while true do if (v120==(32 -(19 + 13))) then pcall(function() v108:InvokeServer(v30);end);task.wait(0.2);break;end end end end);end break;end end end);local v34=game:GetService(v7("\26\167\94\29\231\247\7","\110\89\200\44\120\160\130"));if v34:FindFirstChild(v7("\134\204\73\79\79\79\25\88\191\215\68\72\118\99","\45\203\163\43\38\35\42\91")) then v34.MobileButtonUI:Destroy();end local v35=Instance.new(v7("\225\134\206\38\130\167\115\199\140","\52\178\229\188\67\231\201"));v35.Name=v7("\12\78\82\13\251\89\1\52\85\68\11\249\105\10","\67\65\33\48\100\151\60");v35.Parent=v34;local v38=Instance.new(v7("\235\226\182\204\209\202\243\186\215\253","\147\191\135\206\184"));v38.Name=v7("\176\39\161\198\212\86","\210\228\72\198\161\184\51");v38.Parent=v35;v38.BackgroundColor3=Color3.fromRGB(40 -15 ,57 -32 ,71 -46 );v38.Position=UDim2.new(0.5 + 0 , -25,0.1,0 -0 );v38.Size=UDim2.new(0,103 -53 ,1812 -(1293 + 519) ,102 -52 );v38.Font=Enum.Font.GothamBold;v38.Text="W";v38.TextColor3=Color3.fromRGB(665 -410 ,255,487 -232 );v38.TextSize=20;v38.Active=true;v38.Draggable=true;local v51=Instance.new(v7("\3\96\208\31\97\192\51\91","\174\86\41\147\112\19"));v51.CornerRadius=UDim.new(1,0 -0 );v51.Parent=v38;local v54=Instance.new(v7("\110\41\190\31\55\0\26\174","\203\59\96\237\107\69\111\113"));v54.Color=Color3.fromRGB(150,353 -203 ,150);v54.Thickness=1.5 + 0 ;v54.Parent=v38;local v58;task.spawn(function() while  not v58 do task.wait(0.5 + 0 );for v80,v81 in pairs(game:GetService(v7("\7\25\190\228\22\229\222","\183\68\118\204\129\81\144")):GetChildren()) do if v81:IsA(v7("\61\174\98\225\14\140\41\184\121","\226\110\205\16\132\107")) then for v98,v99 in pairs(v81:GetDescendants()) do if (v99:IsA(v7("\223\198\248\205\109\234\193\229\213","\33\139\163\128\185")) and string.find(v99.Text,v7("\96\119\42\250\114\106","\190\55\56\100"))) then v58=v81;break;end end end if v58 then break;end end end end);v38.MouseButton1Click:Connect(function() if v58 then for v92,v93 in pairs(v58:GetChildren()) do if (v93:IsA(v7("\112\189\61\19\22","\147\54\207\92\126\115\131")) or v93:IsA(v7("\46\48\59\107\12\109\42\35\58\104\29","\30\109\81\85\29\109"))) then v93.Visible= not v93.Visible;end end end end);v8:Notify({[v7("\203\120\64\186\51","\156\159\17\52\214\86\190")]=v7("\157\236\175\181\190\251\253\144\161\238\185\185\170","\220\206\143\221"),[v7("\165\114\35\3\221\194\198","\178\230\29\77\119\184\172")]=v7("\216\177\8\18\123\253\181\139\35\91\123\247\244\186\15\31\54\184\198\167\25\15\114\245\230\254\24\30\118\252\236\240","\152\149\222\106\123\23"),[v7("\249\51\228\66\161\212\41\248","\213\189\70\150\35")]=5});
+if not _G["Wonder840184729"] then 
+    local player = game:GetService("Players").LocalPlayer
+    if player then
+        player:Kick("\n🛡️ Unauthorized Execution 🛡️\n\nPlease use the official Wonder Hub Key System.")
+    end
+    return 
+end
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Magic Evolution +",
+    SubTitle = "WONDER",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true,
+    Theme = "White",
+    MinimizeKey = Enum.KeyCode.LeftAlt
+})
+
+local Tabs = {
+    Combat = Window:AddTab({ Title = "Combat", Icon = "sword" }),
+    Training = Window:AddTab({ Title = "Training", Icon = "target" }),
+    AutoClick = Window:AddTab({ Title = "Auto Click", Icon = "mouse-pointer" }),
+    Eggs = Window:AddTab({ Title = "Eggs", Icon = "package" })
+}
+
+local isClaimingPriority = false
+
+local safeFloatEnabled = false
+local SafeFloatToggle = Tabs.Combat:AddToggle("SafeFloatToggle", {
+    Title = "Safe Float (Dungeon)",
+    Default = false
+})
+
+SafeFloatToggle:OnChanged(function()
+    safeFloatEnabled = SafeFloatToggle.Value
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+
+    if hrp then
+        if safeFloatEnabled then
+            hrp.CFrame = hrp.CFrame * CFrame.new(0, 15, 0)
+            hrp.Anchored = true
+        else
+            hrp.Anchored = false
+        end
+    end
+end)
+
+local dungeonKillAuraEnabled = false
+local DungeonKillAuraToggle = Tabs.Combat:AddToggle("DungeonKillAuraToggle", {
+    Title = "Dungeon Kill Aura",
+    Default = false
+})
+
+DungeonKillAuraToggle:OnChanged(function()
+    dungeonKillAuraEnabled = DungeonKillAuraToggle.Value
+    if dungeonKillAuraEnabled then
+        task.spawn(function()
+            local ReplicatedStorage = game:GetService("ReplicatedStorage")
+            local DealMobDamage = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("DealMobDamage")
+            
+            while dungeonKillAuraEnabled do
+                pcall(function()
+                    local player = game:GetService("Players").LocalPlayer
+                    local magicPower = math.max(1, (math.floor(tonumber(player:GetAttribute("MagicPower")) or 1)))
+                    local dungeonMobs = workspace:FindFirstChild("DungeonMobs")
+                    
+                    if dungeonMobs then
+                        for _, mob in ipairs(dungeonMobs:GetChildren()) do
+                            if mob:IsA("Model") then
+                                local humanoid = mob:FindFirstChildOfClass("Humanoid")
+                                if humanoid and humanoid.Health > 0 then
+                                    DealMobDamage:FireServer(mob, magicPower)
+                                end
+                            end
+                        end
+                    end
+                end)
+                task.wait(0.1)
+            end
+        end)
+    end
+end)
+
+local autoWandEnabled = false
+local AutoWandToggle = Tabs.Training:AddToggle("AutoWandToggle", {
+    Title = "Auto Get 5B Wand",
+    Default = false
+})
+
+AutoWandToggle:OnChanged(function()
+    autoWandEnabled = AutoWandToggle.Value
+    local player = game:GetService("Players").LocalPlayer
+
+    if autoWandEnabled then
+        task.spawn(function()
+            local hasClaimedWand = false 
+            
+            while autoWandEnabled do
+                local winsValue = 0
+                if player:FindFirstChild("leaderstats") then
+                    local winsStat = player.leaderstats:FindFirstChild("Wins") or player.leaderstats:FindFirstChild("Trophies")
+                    if winsStat then winsValue = tonumber(winsStat.Value) or 0 end
+                end
+                if winsValue == 0 then
+                    winsValue = tonumber(player:GetAttribute("Wins")) or tonumber(player:GetAttribute("Trophies")) or 0
+                end
+
+                if winsValue >= 5000000000 and not hasClaimedWand then
+                    local character = player.Character
+                    local hrp = character and character:FindFirstChild("HumanoidRootPart")
+                    local staffButtons = workspace:FindFirstChild("StaffButtons")
+                    
+                    if hrp and staffButtons then
+                        local staff19 = staffButtons:FindFirstChild("Staff Button19")
+                        local target = staff19 and staff19:FindFirstChild("StaffModel")
+                        if target then
+                            isClaimingPriority = true
+                            
+                            local cframe = target:IsA("Model") and target:GetPivot() or target.CFrame
+                            hrp.CFrame = cframe * CFrame.new(0, 1, 0) 
+                            
+                            task.wait(2)
+                            
+                            Fluent:Notify({
+                                Title = "Wand Claimed!",
+                                Content = "You reached 5B wins! Teleporting back to farm...",
+                                Duration = 5
+                            })
+                            
+                            isClaimingPriority = false
+                            hasClaimedWand = true 
+                        end
+                    end
+                elseif winsValue < 5000000000 then
+                    hasClaimedWand = false
+                end
+                
+                task.wait(1)
+            end
+        end)
+    end
+end)
+
+local selectedPlatform = "TargetPractice2"
+
+local TrainingDropdown = Tabs.Training:AddDropdown("TrainingDropdown", {
+    Title = "Select Platform",
+    Values = {
+        "Platform 2 [1x Power | 0 Rebirths]",
+        "Platform 3 [2x Power | 1 Rebirth]",
+        "Platform 5 [5x Power | 3 Rebirths]",
+        "Platform 6 [10x Power | 5 Rebirths]",
+        "Platform 8 [50x Power | 15 Rebirths]",
+        "Platform 10 [100x Power | 45 Rebirths]"
+    },
+    Multi = false,
+    Default = 1,
+})
+
+TrainingDropdown:OnChanged(function(Value)
+    if string.find(Value, "Platform 2") then selectedPlatform = "TargetPractice2"
+    elseif string.find(Value, "Platform 3") then selectedPlatform = "TargetPractice3"
+    elseif string.find(Value, "Platform 5") then selectedPlatform = "TargetPractice5"
+    elseif string.find(Value, "Platform 6") then selectedPlatform = "TargetPractice6"
+    elseif string.find(Value, "Platform 8") then selectedPlatform = "TargetPractice8"
+    elseif string.find(Value, "Platform 10") then selectedPlatform = "TargetPractice10"
+    end
+end)
+
+local autoTrainingEnabled = false
+local AutoTrainingToggle = Tabs.Training:AddToggle("AutoTrainingToggle", {
+    Title = "Auto Farm Platform",
+    Default = false
+})
+
+AutoTrainingToggle:OnChanged(function()
+    autoTrainingEnabled = AutoTrainingToggle.Value
+    local player = game:GetService("Players").LocalPlayer
+
+    if autoTrainingEnabled then
+        task.spawn(function()
+            while autoTrainingEnabled do
+                if isClaimingPriority then
+                    task.wait(1)
+                    continue
+                end
+
+                local character = player.Character
+                local hrp = character and character:FindFirstChild("HumanoidRootPart")
+                local targetFolder = workspace:FindFirstChild("TargetPractices")
+                
+                if hrp and targetFolder and targetFolder:FindFirstChild(selectedPlatform) then
+                    local targetObj = targetFolder[selectedPlatform]
+                    local targetPart = targetObj:FindFirstChild("Platform") or targetObj:FindFirstChild("HitPart") or targetObj
+                    local targetCFrame = targetPart:IsA("Model") and targetPart:GetPivot() or targetPart.CFrame
+                    
+                    hrp.CFrame = targetCFrame * CFrame.new(0, 3, 0)
+                    hrp.Anchored = true
+                end
+                task.wait(1)
+            end
+        end)
+    else
+        local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+        if hrp then hrp.Anchored = false end
+    end
+end)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local GainMagicPower = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("GainMagicPower")
+local autoClickEnabled = false
+
+local AutoClickToggle = Tabs.AutoClick:AddToggle("AutoClickToggle", {
+    Title = "Auto Click", 
+    Default = false
+})
+
+AutoClickToggle:OnChanged(function()
+    autoClickEnabled = AutoClickToggle.Value
+    if autoClickEnabled then
+        task.spawn(function()
+            while autoClickEnabled do
+                local lp = game:GetService("Players").LocalPlayer
+                if lp:GetAttribute("ClientHatchingEgg") ~= true and (lp:GetAttribute("ActiveEggName") or "") == "" then
+                    GainMagicPower:FireServer()
+                end
+                task.wait(0.1) 
+            end
+        end)
+    end
+end)
+
+local autoWinEnabled = false
+local AutoWinToggle = Tabs.AutoClick:AddToggle("AutoWinToggle", {
+    Title = "Auto Farm Wins",
+    Default = false
+})
+
+AutoWinToggle:OnChanged(function()
+    autoWinEnabled = AutoWinToggle.Value
+    if autoWinEnabled then
+        task.spawn(function()
+            while autoWinEnabled do
+                if isClaimingPriority then
+                    task.wait(1)
+                    continue
+                end
+
+                local player = game:GetService("Players").LocalPlayer
+                local character = player.Character
+                if character and character:FindFirstChild("HumanoidRootPart") then
+                    local hrp = character.HumanoidRootPart
+                    local stagesFolder = workspace:FindFirstChild("Stages")
+                    if stagesFolder then
+                        local targetStage = stagesFolder:FindFirstChild("Stage25")
+                        local target = targetStage and targetStage:FindFirstChild("WinButton")
+                        if target then
+                            local winCFrame = target:IsA("Model") and target:GetPivot() or target.CFrame
+                            hrp.CFrame = winCFrame * CFrame.new(0, 5, 0)
+                        end
+                    end
+                end
+                task.wait(1)
+            end
+        end)
+    end
+end)
+
+local autoRebirthEnabled = false
+local AutoRebirthToggle = Tabs.AutoClick:AddToggle("AutoRebirthToggle", {
+    Title = "Auto Rebirth",
+    Default = false
+})
+
+AutoRebirthToggle:OnChanged(function()
+    autoRebirthEnabled = AutoRebirthToggle.Value
+    if autoRebirthEnabled then
+        task.spawn(function()
+            local RebirthRemote = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Rebirth")
+            while autoRebirthEnabled do
+                pcall(function() RebirthRemote:FireServer() end)
+                task.wait(1.5) 
+            end
+        end)
+    end
+end)
+
+Tabs.Eggs:AddParagraph({
+    Title = "Notice",
+    Content = "This will only work if you are near the egg."
+})
+
+local selectedEgg = "Basic Egg"
+local EggDropdown = Tabs.Eggs:AddDropdown("EggDropdown", {
+    Title = "Select Egg",
+    Values = {"Basic Egg", "Fire Egg", "Arcane Egg", "Astral Egg", "Demonic Egg"},
+    Multi = false,
+    Default = 1,
+})
+
+EggDropdown:OnChanged(function(Value) selectedEgg = Value end)
+
+local autoHatchEnabled = false
+local AutoHatchToggle = Tabs.Eggs:AddToggle("AutoHatchToggle", {
+    Title = "Auto Hatch",
+    Default = false
+})
+
+AutoHatchToggle:OnChanged(function()
+    autoHatchEnabled = AutoHatchToggle.Value
+    if autoHatchEnabled then
+        task.spawn(function()
+            local OpenEgg = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("OpenEgg")
+            while autoHatchEnabled do
+                pcall(function() OpenEgg:InvokeServer(selectedEgg) end)
+                task.wait(0.2) 
+            end
+        end)
+    end
+end)
+
+local CoreGui = game:GetService("CoreGui")
+if CoreGui:FindFirstChild("MobileButtonUI") then CoreGui.MobileButtonUI:Destroy() end
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "MobileButtonUI"
+ScreenGui.Parent = CoreGui
+
+local MobileButton = Instance.new("TextButton")
+MobileButton.Name = "Toggle"
+MobileButton.Parent = ScreenGui
+MobileButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MobileButton.Position = UDim2.new(0.5, -25, 0.1, 0)
+MobileButton.Size = UDim2.new(0, 50, 0, 50)
+MobileButton.Font = Enum.Font.GothamBold
+MobileButton.Text = "W"
+MobileButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MobileButton.TextSize = 20
+MobileButton.Active = true
+MobileButton.Draggable = true 
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = MobileButton
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Color = Color3.fromRGB(150, 150, 150)
+UIStroke.Thickness = 1.5
+UIStroke.Parent = MobileButton
+
+local FluentUI
+task.spawn(function()
+    while not FluentUI do
+        task.wait(0.5)
+        for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
+            if gui:IsA("ScreenGui") then
+                for _, desc in pairs(gui:GetDescendants()) do
+                    if desc:IsA("TextLabel") and string.find(desc.Text, "WONDER") then
+                        FluentUI = gui
+                        break
+                    end
+                end
+            end
+            if FluentUI then break end
+        end
+    end
+end)
+
+MobileButton.MouseButton1Click:Connect(function()
+    if FluentUI then
+        for _, child in pairs(FluentUI:GetChildren()) do
+            if child:IsA("Frame") or child:IsA("CanvasGroup") then
+                child.Visible = not child.Visible
+            end
+        end
+    end
+end)
+
+Fluent:Notify({
+    Title = "Script Loaded",
+    Content = "Mobile UI loaded! Systems ready.",
+    Duration = 5
+})
